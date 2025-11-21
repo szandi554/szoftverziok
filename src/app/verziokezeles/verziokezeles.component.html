@@ -1,0 +1,30 @@
+<h2>Verziókezelés</h2>
+
+<table class = "table table-striped bs-border-color">
+    <thead>
+        <tr>
+            <th>Verzió</th>
+            <th>Dátum</th>
+            <th>Csapat</th>
+            <th>Hibák</th>
+            <th>Új funkciók</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (szoftverek of szoftverVerziok; track szoftverek.verzio) {
+            <tr>
+                <td>{{szoftverek.verzio}}</td>
+                <td>{{szoftverek.datum}}</td>
+                <td>{{szoftverek.csapat}}</td>
+                <td>{{szoftverek.hibak}}</td>
+                <td>{{szoftverek.ujFunkciok}}</td>
+                     @if(szoftverek.hibak > szoftverek.ujFunkciok) {
+                <td><span class="warning-icon">!</span></td>
+                
+
+                    }
+            </tr>
+        }
+        <p>Összes hiba: {{ osszesHibajavitas }}</p>
+    </tbody>
+</table>
