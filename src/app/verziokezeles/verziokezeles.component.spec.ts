@@ -2,7 +2,7 @@
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerziokezelesComponent } from './verziokezeles.component';
+import { VerziokezelesComponent } from './VerziokezelesComponent';
 
 describe('VerziokezelesComponent', () => {
   let component: VerziokezelesComponent;
