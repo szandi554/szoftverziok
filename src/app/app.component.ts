@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VerziokezelesComponent } from './verziokezeles/VerziokezelesComponent';
+import { VerziokezelesComponent } from "./verziokezeles/verziokezeles.component";
 
 @Component({
   selector: 'app-root',
